@@ -12,15 +12,15 @@ The document is hosted on https://github.com/mortennobel/cpp-cheatsheet. Any com
 ## Preprocessor
 
 ```cpp
-                            // Comment to end of line
-                            /* Multi-line comment */
-#include  <stdio.h>         // Insert standard header file
-#include "myfile.h"         // Insert file in current directory
-#define X some text         // Replace X with some text
-#define F(a,b) a+b          // Replace F(1,2) with 1+2
+                            // Kommentar bis zum Ende der Zeile
+                            /* Kommentar über mehrere Zeilen */
+#include  <stdio.h>         // Standard Bibliothek einfügen
+#include "myfile.h"         // Bibliothek im aktuellen Pfad einfügen
+#define X some text         // Ersetze X mit Text
+#define F(a,b) a+b          // Ersetze F(1,2) mit 1+2
 #define X \
- some text                  // Multiline definition
-#undef X                    // Remove definition
+ some text                  // Über mehrere Zeilen definieren
+#undef X                    // Definition entfernen
 #if defined(X)              // Conditional compilation (#ifdef X)
 #else                       // Optional (#ifndef X or #if !defined(X))
 #endif                      // Required after #if, #ifdef
@@ -43,8 +43,8 @@ nullptr                     // Pointer type with the address of 0
 ## Declarations
 
 ```cpp
-int x;                      // Declare x to be an integer (value undefined)
-int x=255;                  // Declare and initialize x to 255
+int x;                      // Deklariere x als Integer (ohne Wert)
+int x=255;                  // Weise dem Integer x den Wert 255 zu
 short s; long l;            // Usually 16 or 32 bit integer (int may be either)
 char c='a';                 // Usually 8 bit character
 unsigned char u=255;
